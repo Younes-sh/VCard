@@ -8,7 +8,7 @@ body{
     color: #fff;
 }
 /*          Media Qury Responsive */
-[class *='col-']{
+/* [class *='col-']{
     float: right;
 }
 .row{
@@ -84,21 +84,33 @@ body{
     .col-lg-10 {width: 83.33%;}
     .col-lg-11 {width: 91.66%;}
     .col-lg-12 {width: 100%;}  
-}
-.container-Responsive{
+} */
+/* .container-Responsive{
     height: 830px;
     max-width: 1500px;
-}
+} */
 
 /*          Side         */
-.side{grid-area: side;
+.side{
+    grid-area: side;
     height: 830px;
     background-color:#212731;
     padding-top: 50px;
     position: relative;
 }
-.main{grid-area: main;
-background-color: 	#343434;}
+.main{
+    grid-area: main;
+    background-color:#343434;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.main .grid2{
+    /* background-color: rgba(0, 255, 255, 0.151); */
+    /* display: flex; */
+    justify-items: legacy;
+}
+
+
 .footer{grid-area: footer;
     max-width: 100%;
     height: 120px;
@@ -109,7 +121,7 @@ background-color: 	#343434;}
     grid-template-areas: 'side main main main main main'
     'footer footer footer footer footer footer';
 }
-/*       */
+/*          Side Bar    */
 
 .container-H1{
     width: 100%;
@@ -132,7 +144,6 @@ background-color: 	#343434;}
     width: 30%;
     height: 400px;
     margin: 140px auto;
-    /* background-color: antiquewhite; */
 }
 
 .side .container-list img{
@@ -149,14 +160,14 @@ background-color: 	#343434;}
     font-size: 20px;
 }
 
-/*          Main     */
+/*           Main         */
 .main-content{
     height: 400px;
     margin-top: 150px;
 }
 
 .text-main{
-    padding: 70px 50px;
+    padding: 70px 70px;
     text-align: left;
     /* background-color: rgb(165, 48, 48); */
 }
@@ -202,7 +213,9 @@ background-color: 	#343434;}
 /*          Profile Pictuer  */
 .container-image{
     height: 500px;
-    padding-left: 50px;
+    padding-left: 100px;
+    -webkit-clip-path: ellipse(45% 47% at 47% 48%);
+    clip-path: ellipse(45% 47% at 47% 48%);
     background-image: url(../photos/bground.png);
     background-repeat: no-repeat;
 }
