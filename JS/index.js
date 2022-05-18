@@ -11,3 +11,19 @@ function change() {
     // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
   }
 }
+//      Home 
+const home = document.querySelector('#home');
+home.addEventListener('click',homeHandler)
+function homeHandler(){
+  about.classList.toggle('open')
+}
+
+//      About 
+
+const aboutBtn = document.querySelector('#about');
+const about = document.querySelector('.about');
+aboutBtn.addEventListener('click' , aboutHandler)
+function aboutHandler(){
+  about.classList.toggle('open')
+
+}

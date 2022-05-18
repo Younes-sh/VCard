@@ -231,6 +231,10 @@ body{
     grid-template-columns: repeat(3,1fr);
     gap: 1px;
 }
+/* open & close  section About */
+.open{
+    display: none;
+}
 
 .about h1{
     text-align: left;
