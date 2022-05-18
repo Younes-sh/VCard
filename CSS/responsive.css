@@ -37,6 +37,20 @@
         padding-top: 50px;
     }
     .grid1 img{
+        position: absolute;
+    }
+    .grid1 .paragraph{
+        margin-top: 20px;
+    }
+    .grid1 button{
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width:724px) {
+    .main{
+        padding-top: 5px;
+    }
+    .grid1 img{
         margin-right:20%;
     }
     .grid1 .paragraph{
@@ -44,5 +58,60 @@
     }
     .grid1 button{
         margin-top: 35px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .grid1 img{
+      position: absolute;
+    }
+    .grid1 #changeText{
+        display: block;
+    }
+}
+
+
+/*       Skill Responsive */
+
+@media screen and (max-width:1302px) {
+    .footer{
+        display: none;
+    }
+    .about{
+        height: 100%;
+    }
+}
+@media screen and (max-width:1231px) {
+    .about .personal-profile .row-list li{
+        font-size: 16px;
+    }
+    .footer{
+        display: none;
+    }
+    .about{
+        height: auto;
+    }
+}
+@media screen and (max-width:999px) {
+  
+    .side{
+      display: none;
+    }
+}
+@media screen and (min-width:999px) {
+  .menu-burger{
+    display: none;
+  }
+  .container-menu-burger{
+    display: none;
+  }
+}
+@media screen and (max-width:800px) {
+  
+    .side{
+        height: 100vh;
+    }
+    .skills li{
+        display: block;
     }
 }

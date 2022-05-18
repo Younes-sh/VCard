@@ -5,14 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--        CSS      -->
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/about.css">
+    <link rel="stylesheet" href="../CSS/menuBurger.css">
     <!--        CSS Responsive   -->
     <link rel="stylesheet" href="../CSS/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <button class="menu-burger open close"></button>
+    <div class="container-menu-burger hiden">
+        <ul>
+            <li class="icon-home home border-color-home"><a href="#"><img src="../icons/home.png" alt="" id="home">Home</a></li>
+            <li class="bottem-about border-color-about"><a href="#"><img src="../icons/user.png" alt="" id="about">About</a></li>
+            <li class=""><a href="#"><img src="../icons/services.png" alt="">Services</a></li>
+            <li><a href="#"><img src="../icons/portfolio.png" alt="">Portfolio</a></li>
+            <li><a href="#"><img src="../icons/contact.png" alt="">Contact</a></li>
+        </ul>
+    </div>
 <div class="container">
+    
     <!--        Side Bar -->
     <div class="side">
         <div class="container-H1">
@@ -21,16 +33,16 @@
         
         <div class="container-list">
             <ul>
-                <li><a href="#"><img src="../icons/home.png" alt="" id="home">Home</a></li>
-                <li><a href="#"><img src="../icons/user.png" alt="" id="about">About</a></li>
-                <li><a href="#"><img src="../icons/services.png" alt="">Services</a></li>
+                <li class="icon-home home border-color-home"><a href="#"><img src="../icons/home.png" alt="" id="home">Home</a></li>
+                <li class="bottem-about border-color-about"><a href="#"><img src="../icons/user.png" alt="" id="about">About</a></li>
+                <li class=""><a href="#"><img src="../icons/services.png" alt="">Services</a></li>
                 <li><a href="#"><img src="../icons/portfolio.png" alt="">Portfolio</a></li>
                 <li><a href="#"><img src="../icons/contact.png" alt="">Contact</a></li>
             </ul>
         </div>
        
     </div>
-    <div class="main" id="home">
+    <div class="main home" id="home">
         
 
         <div class="Grid grid1">
@@ -57,13 +69,19 @@
                 </div>
             </div>
         </div>
-        <!--   About   -->
-        <div class="about open">
+                                         <!--   About   -->
+        <div class="about display">
             <div class="head-about">
                 <h1>About Me</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quaerat ipsa doloremque eveniet iure libero, iste dolore repellendus <br>expedita dolorem fuga cupiditate alias corporis enim dolorum labore veritatis <br> adipisci quos.
-                Nemo maiores vel animi, dolores sunt debitis cumque praesentium magni <br>accusantium deserunt odio quas. Ullam facere laudantium vero ad,<br> dicta nulla adipisci voluptatem quisquam magni ipsa, ipsum quod facilis quasi!
-                Corrupti minus ipsa delectus iure, quis aperiam? Illum<br> ad aut suscipit error accusamus excepturi id cum illo non. Cum incidunt quibusdam ad quaerat rem placeat esse accusantium, ex molestias mollitia.</p>
+                <p>I'm Younes Sheikhlar - Born in 1985, I started programming seriously , <br>
+                    From the very beginning of learning programming, I drew a roadmap for myself,<br>
+                    because I had a clear goal and interest ;
+                    Perhaps I can boldly say that I studied and practiced for 12 hours every day ,<br>
+                    I learned to learn at least one or more programming tips every day! <br>
+                    But this is not the end! The path is still full of challenges and training .<br><br>
+                    
+                    <span class="slogan">I enjoy this route</span>
+                    </p>
             </div>
            
             <div class="personal-profile">
@@ -80,7 +98,7 @@
                         <ul>
                             <li>Age: <span>36</span></li>
                             <li>Email: <span>sheiklaryounes@gmail.com</span></li>
-                            <li>phone: span471823827</li>
+                            <li>phone: +32 471-82-38-27</li>
                             <li>Freelance: <span>Availabel</span></li>
                         </ul>
                     </li>
@@ -89,31 +107,31 @@
             <div class="skills">
                 <ul>
                     <li>
-                        <span>CSS</span>
+                        <span class="">CSS</span><span class="spacBetween cssPercent">70%</span>
                         <div class="css">
                             <div class="percent"></div>
                         </div>
                     </li>
                     <li>
-                        <span>HTML</span>
+                        <span class="">HTML</span> <span class="spacBetween">80%</span>
                         <div class="html">
                             <div class="percent"></div>
                         </div>
                     </li>
                     <li>
-                        <span>JavaScript</span>
+                        <span class="">JavaScript</span> <span class="spacBetween">50%</span>
                         <div class="js">
                             <div class="percent"></div>
                         </div>
                     </li>
                     <li>
-                        <span>Git</span>
+                        <span class="">Git</span> <span class="spacBetween">25%</span>
                         <div class="git">
                             <div class="percent"></div>
                         </div>
                     </li>
                     <li>
-                        <span>Bootstrap</span>
+                        <span class="">Bootstrap</span> <span class="spacBetween">80%</span>
                         <div class="bootstrap">
                             <div class="percent"></div>
                         </div>
@@ -125,10 +143,10 @@
     </div>
 
 
-    <div class="footer">
-
-    </div>
+  
 </div>
+    <script src="../JS/menuBurger.js"></script>
+    <script src="../JS/cssProgressPercent.js"></script>
     <script src="../JS/index.js"></script>
 </body>
 </html>
