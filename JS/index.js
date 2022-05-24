@@ -33,13 +33,3 @@ function aboutHandler(){
 }
 
 
-//     Skills
-//      Css
-
-//      Html
-
-//      Javascript
-
-//      Git
-
-//      Bootstrap
