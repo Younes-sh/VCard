@@ -1,0 +1,16 @@
+color light-green/black light-red/blue light-green/black light-green/black
+timeout 30
+default 0
+
+write (md)0x220+1 !BAT\necho -n -P:0000 $[0106]         WinToFlash Bootable USB with Windows XP/2003 Setup Program\0
+initscript (md)0x220+1
+
+title 1st, text mode setup (Boot from flash again after finished)
+root (hd0,0)
+chainloader (hd0,0)/$LDR$
+savedefault 1
+
+title 2nd, GUI mode setup, continue setup + 1st start of Windows
+root (hd0,0)
+chainloader (hd0,0)/NTLDR
+savedefault 1

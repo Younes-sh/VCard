@@ -1,0 +1,10 @@
+color light-green/black light-red/blue light-green/black light-green/black
+timeout 0
+default 0
+
+title Microsoft Windows XP/2003 Recovery Console
+find --set-root /CMDCONS/SETUPLDR.BIN
+chainloader /CMDCONS/SETUPLDR.BIN
+write 0x7C03 0x63646D63
+write 0x7C07 0x00736E6F
+savedefault 1

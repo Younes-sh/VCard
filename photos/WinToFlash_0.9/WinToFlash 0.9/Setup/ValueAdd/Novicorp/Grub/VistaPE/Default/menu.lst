@@ -1,0 +1,7 @@
+color light-green/black light-red/blue light-green/black light-green/black
+timeout 0
+default 0
+
+title Start Windows PE v2/v3 or Recovery
+root (hd0,0)
+chainloader (hd0,0)/bootmgr

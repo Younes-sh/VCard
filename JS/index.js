@@ -1,4 +1,4 @@
-var text = ["Programmer Front End", "Desiner", "Programmer Back End" , "Web Developer"];
+var text = ["Programmer Front End", "Designer", "Programmer Back End" , "Web Developer"];
 var counter = 0;
 var elem = document.getElementById("changeText");
 var inst = setInterval(change, 2000);
@@ -13,23 +13,8 @@ function change() {
 }
 
 
-//      Home 
-const home = document.querySelector('.home');
-home.addEventListener('click',homeHandler)
-function homeHandler(){
-  about.classList.add(' display')
-}
 
-//      About 
 
-const aboutBtn = document.querySelector('#about');
-const about = document.querySelector('.about');
-const bottemColor = document.querySelector('.bottem-about')
 
-aboutBtn.addEventListener('click' , aboutHandler)
-function aboutHandler(){
-  about.classList.toggle('display')
-  bottemColor.classList.toggle('border-color-about')
-}
 
 
