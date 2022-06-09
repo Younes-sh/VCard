@@ -81,7 +81,6 @@
 }
 @media screen and (max-width:1000px) {
     .service{
-        background-color: rgba(127, 255, 212, 0.253);   
         height: 400px;
         margin-left: 10px;
     }
@@ -131,20 +130,44 @@
 }
 @media screen and (max-width:923px) {
     .service{
-        background-color: rgba(127, 255, 212, 0.253);   
         height: 400px;
-        margin: 0 160px;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
     }
-    .side{
-        display: none;
+    .cards{
+        max-width: 400px;
+        height: auto;
+    }
+   
+}
+@media screen and (max-width:915px) {
+    .service{
+        max-width: 100%;
+        margin: auto;
     }
 }
 @media screen and (max-width:567px) {
+ 
     .service{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        padding: 0;
     }
 }
-
+@media screen and (max-width:390px) {
+    .service{
+        margin: auto;
+        padding: 15px;
+    }
+    .cards{
+        margin: 10px 5px;
+    }
+   
+}
+@media screen and (max-width:350px) {
+    .cards{
+        margin:  -100px;
+    }
+  
+}
