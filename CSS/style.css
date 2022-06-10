@@ -9,7 +9,9 @@ body{
     background-color: #343434;
     position: relative;
 }
-
+li{
+    list-style-type: none;
+}
 
 /*          Side         */
 .side{
