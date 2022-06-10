@@ -15,6 +15,17 @@ function change() {
 
 
 
+// var inst = setInterval(change,()=>{
+//   elem.innerHTML = text[counter];
+//   counter++;
+//   if (counter >= text.length) {
+//     counter = 0;
+//     // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+//   }
+
+// },2000);
+
+
 
 
 

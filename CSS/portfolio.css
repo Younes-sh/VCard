@@ -76,15 +76,17 @@ body{
     border-radius: 7px;
     box-shadow: rgba(10, 10, 10, 0.19) 0px 10px 20px, rgba(10, 10, 10, 0.23) 0px 6px 6px;
 }
- .cards img{
+.cards img{
     max-width: 300px;
     height: auto;
     cursor: pointer;
 }
 .cards img:hover{
-    transform:scale(1.2deg);
-    transition: 0.5s;
+    -webkit-box-shadow: 0 28px 16px -26px rgb(166, 43, 43);
+   -moz-box-shadow: 0 28px 16px -26px rgb(80, 72, 72);
+   box-shadow: 0 28px 16px -26px rgb(121, 57, 57);
 }
+
 .cards h3{
     margin-top: 5px;
 }

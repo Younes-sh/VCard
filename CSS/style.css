@@ -65,6 +65,10 @@ body{
     margin: 140px auto;
 }
 
+.home img{
+   text-shadow: 2px 2px 5px white;
+}
+
 .side .container-list img{
     padding: 0 15px;
 }
@@ -78,6 +82,7 @@ body{
     color: #fff;
     font-size: 20px;
 }
+
 
 /*           Main         */
 .main-content{
@@ -134,6 +139,13 @@ body{
 .text-main button:hover{
     background-color: rgb(206, 115, 10);
     color: rgb(9, 32, 95);
+}
+.text-main button a{
+    text-decoration: none;
+    color: #fff;
+}
+.text-main button a:hover{
+    color: rgb(37, 77, 90);
 }
 /*          Profile Pictuer  */
 .container-image{
