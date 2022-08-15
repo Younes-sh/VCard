@@ -132,7 +132,7 @@ li{
     list-style-type:  none;
     padding: 20px 30px;
 }
-.skills .css , .html , .js , .git , .bootstrap{
+.skills .css , .html , .js , .git , .bootstrap , .Reactjs , .Tailwind{
     width: 100%;
     height: 5px;
     border: solid 1px lightslategray;
@@ -165,7 +165,7 @@ li{
         width: 0;
     }
     to{
-        width: 80%;
+        width: 100%;
     }
 }
 .js div{
@@ -201,6 +201,18 @@ li{
     }
     to{
         width: 80%;
+    }
+}
+
+.Tailwind div {
+    animation: percentProgres-Tailwind 5s forwards;
+}
+@keyframes percentProgres-Tailwind{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
     }
 }
 
