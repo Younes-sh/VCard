@@ -1,7 +1,0 @@
-color light-green/black light-red/blue light-green/black light-green/black
-timeout 0
-default 0
-
-title NTLDR Loader
-chainloader /NTLDR
-savedefault 1

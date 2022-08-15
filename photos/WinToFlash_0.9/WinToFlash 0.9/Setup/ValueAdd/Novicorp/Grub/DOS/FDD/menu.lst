@@ -1,6 +1,0 @@
-color light-green/black light-red/blue light-green/black light-green/black
-timeout 0
-default 0
-
-title Start MS-DOS
-chainloader /IO.SYS
