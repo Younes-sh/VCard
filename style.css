@@ -8,6 +8,7 @@ body{
     color: #fff;
     background-color: #343434;
     position: relative;
+    font-family: sans-serif;
 }
 
 
@@ -81,10 +82,12 @@ body{
     color: #fff;
     font-size: 20px;
 }
-
-.border-color-home::after{
-    content: ' \002551';
-    color: orange;
+.border-bottem {
+    border: solid 1px;
+    border-bottom-color: orange;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
 }
 
 /*           Main         */

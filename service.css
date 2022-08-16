@@ -23,7 +23,6 @@
     text-align: left;
     margin-top: 30px;
     padding: 5px;
-    /* background-color: rgba(255, 255, 255, 0.24); */
 }
 .side li a{
     text-decoration: none;
@@ -31,9 +30,12 @@
     font-size: 20px;
 }
 
-.service-color-about::after{
-    content: ' \002551';
-    color: orange;
+.border-bottem {
+    border: solid 1px;
+    border-bottom-color: orange;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
 }
 /* main */
 .side{

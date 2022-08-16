@@ -8,6 +8,7 @@ body{
     color: #fff;
     background-color: #343434;
     position: relative;
+    font-family: sans-serif;
 }
 
 /*          Side         */
@@ -55,15 +56,19 @@ body{
     padding: 5px;
     /* background-color: rgba(255, 255, 255, 0.24); */
 }
+.border-bottem {
+    border: solid 1px;
+    border-bottom-color: orange;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
 .side li a{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
 }
-.portfolio::after{
-    content: ' \002551';
-    color: orange;
-}
+
 /* End Side */
 /* main */
 .main{
