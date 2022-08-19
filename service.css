@@ -41,6 +41,9 @@
 .side{
     max-width: 200px;
 }
+.container {
+    position: relative;
+}
 .service{
     position: absolute;
     width: 89.5%;
@@ -53,7 +56,7 @@
     padding: 70px 160px;
 }
 .bgcolor{
-    background-color:#fdfdfd;
+    /* background-color:#fdfdfd; */
 }
 
 .cards{
@@ -73,61 +76,103 @@
     padding: 30px;
 }
 .cards img{
-    max-width: 100px;
-    margin-top: 20px;
+    width: 130px;
+    margin-top: 2px;
 }
 
-@media screen and (max-width:1265px) {
+@media screen and (max-width:1266px) {
+   
     .cards{
-        max-width: 270px;
+        width: 270px;
     }
+}
+@media screen and (max-width : 1254px) {
+    .service {
+        margin-left: 100px;
+    }
+  
+}
+
+@media screen and (max-width : 1105px) {
+    .service {
+        margin-left: 70px;
+    }
+   
 }
 @media screen and (max-width:1078px) {
-    
+    .service {
+         margin:  0 50px;
+    }
     .cards{
-        max-width: 200px;
-        margin-left: -70px;
+        width: 400px;
+        margin: 0 10px;
     }
 }
-@media screen and (max-width:1000px) {
-    .service{
-        height: 400px;
-        margin-left: 10px;
-    }
-    .cards{
-        max-width: 200px;
-    }
-    .cards img{
-        max-width: 70px;
-        margin-top: 20px;
-    }
+@media screen and (max-width:1066px) {
     
+    .cards{
+        width: 390px;
+        margin: 0 10px;
+    }
 }
 @media screen and (max-width:1029px) {
     .service{
        display: grid;
        grid-template-columns: repeat(2,1fr);
-       margin: 10px 130px;
+       margin: 10px 50px;
     }
     .cards{
-        max-width: 270px;
+        width: 370px;
     }
 }
-@media screen and (max-width:970px) {
+
+
+@media screen and (max-width:1000px) {
+    .service{
+        width: 100%;
+        height: auto;
+        margin: 0 -70px;
+    }
+    .service .cards {
+        height: auto;
+    }
+   
+    .cards img{
+        width: 200px;
+        height: 150px;
+        margin-top: 20px;
+    }
     
-    .service{
-        margin: 0 50px;
-    }
-    .cards{
-        margin: 5px;
-        max-width: 270px;
-    }
 }
-@media screen and (max-width:930px) {
+
+
+@media screen and (max-width:971px) {
+    
+    .service {
+        padding: 0 100px;
+    }
+   
+    .service .cards {
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   }
+   .service .cards  img {
+    width: 100px;
+   }
+   .service .cards p {
+       width: 100%;
+       text-align: center;
+   }
+}
+
+@media screen and (max-width:931px) {
     .service{
-        display: grid;
-        grid-template-columns: repeat(1 , 1fr);
-        margin: 0 160px;
+        /* padding: 0 100px; */
+        margin: 0 20px;
     }
     .cards{
         max-width: 300px;
@@ -138,15 +183,12 @@
         padding: 5px;
     }
 }
-@media screen and (max-width:923px) {
+@media screen and (max-width:924px) {
     .service{
-        height: 400px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
+       padding: 50px;
     }
     .cards{
-        max-width: 400px;
+        max-width: 350px;
         height: auto;
     }
    
@@ -154,21 +196,78 @@
 @media screen and (max-width:915px) {
     .service{
         max-width: 100%;
-        margin: auto;
+        
+    }
+}
+@media screen and (max-width:853px) {
+    .service {
+        display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
+@media screen and (max-width:811px) {
+    .service .cards{
+        height: auto;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width : 723px) {
+    .service .cards {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+    }
+    .service .cards p {
+        width: 100%;
+        text-align: center;
     }
 }
 @media screen and (max-width:567px) {
- 
+  
     .service{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        padding: 0;
+        margin: 0  20px;
+    }
+    .service .cards {
+        width: 300px;
+        height: auto;
+    }
+    .service .cards p {
+        margin: 20px 0;
+        padding: 5px;
+    }
+    .service .cards img {
+        width: 200px ;
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:428px) {
     .service{
-        margin: auto;
-        padding: 15px;
+        margin: 0 auto;
+        padding:0 50px;
+    }
+    .cards{
+        margin: 10px 5px;
+    }
+   
+}
+@media screen and (max-width:415px) {
+    .service{
+        margin: 0 auto;
+        padding:0 40px;
+    }
+    .cards{
+        margin: 10px 5px;
+    }
+   
+}
+@media screen and (max-width:375px) {
+    .service{
+        padding: 30px;
+        
     }
     .cards{
         margin: 10px 5px;

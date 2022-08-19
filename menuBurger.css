@@ -5,6 +5,7 @@
     font-size: 20px;
     cursor: pointer;
     background-color: #343434;
+    z-index: 7;
 }
 .close::before{
     content: '\002716  Close';
@@ -20,7 +21,7 @@
     margin: auto;
     background-color: rgba(6, 33, 56, 0.377);
     display: inline;
-    z-index: 7;
+    z-index: 6;
 }
 .hiden{
     display: none;
