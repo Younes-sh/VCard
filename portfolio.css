@@ -10,16 +10,18 @@ body{
     position: relative;
     font-family: sans-serif;
 }
+.container {
+    display: flex;
+    align-items: center;
+}
 
 /*          Side         */
 .side{
-    max-width: 200px;
+    width: 200px;
     height: 100vh;
     background-color:#212731;
     padding-top: 50px;
-    display: inline-block;
-    float: left;
-    position: relative;
+    position: fixed;
 }
 
 .container-H1{
@@ -69,20 +71,30 @@ body{
     font-size: 20px;
 }
 
-/* End Side */
-/* main */
+/* End Side --------------------------*/
+
+/* main ------------------------------*/
 .main{
     max-width: 100%;
     height: 100vh;
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    padding-top: 100px;
-    gap: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.content {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.main .container-cards {
+    width: 50%;
+    height: auto;
+    display: flex;
 }
 .cards{
-    max-width: 90%;
+    width: 400px;
     height: 300px;
-    margin: auto;
+    margin: 0 10px;
     /* background-color: rgba(105, 98, 88, 0.158); */
     padding: 50px ;
     border-radius: 7px;
@@ -108,6 +120,84 @@ body{
     margin-top: 7px;
     color: rgb(245, 235, 235);
 }
+@media screen and (max-width: 1625px) {
+    .main  {
+        flex-direction: row;
+    }
+    .container-cards {
+        margin: 0 200px;
+        flex-direction: column;
+    }  
+}
+@media screen and (max-width: 1416px) {
+    .main .cards {
+      width: 350px;
+      padding: 30px ;
+    }  
+}
+@media screen and (max-width: 1376px) {
+    .main  {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }  
+  }
+@media screen and (max-width: 1307px) {
+  .main .cards {
+    margin: 0 1px;
+  }  
+}
+@media screen and (max-width: 1051px) {
+    .main .cards {
+      width: 500px;
+    }  
+}
+@media screen and (max-width: 1000px) {
+    .main  .cards{
+      margin: 50px auto;
+    }  
+    .content {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 811px) {
+    .container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }  
+  
+}
 
 
- 
+@media screen and (max-width: 428px) {
+    .content  {
+        justify-content: center;
+    }  
+    .main .cards  {
+       width: 400px;
+        margin: 10px -198px;
+    }  
+}
+@media screen and (max-width: 415px) {
+   
+    .main .cards  {
+       width: 400px;
+    }  
+}
+@media screen and (max-width: 412px) {
+    .main  {
+      margin: 50px auto;
+    }  
+    .main .cards  {
+       width: 400px;
+    }  
+}
+@media screen and (max-width: 375px) {
+    .main  {
+      margin: 50px auto;
+    }  
+    .main .cards  {
+       width: 370px;
+    }  
+  }
