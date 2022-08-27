@@ -24,10 +24,11 @@ body {
     flex-direction: column;
 }
 .download  , .print , .home{
-    width: 100px;
+    width: 140px;
     margin-top: 17px;
     padding: 5px 15px;
     cursor: pointer;
+    font-size: 16px;
     color: green;
     border: solid 1px;
     border-radius: 5px;
