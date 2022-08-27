@@ -2,18 +2,10 @@
     .grid1 .img-responsive{
        display: none;
     }
-    .image-younes {
-        display: none;
-    }
+   
 }
 
-.image-younes {
-    width: 120px;
-    height: auto;
-    margin: 100px 200px;
-    z-index: 5;
-    position: absolute;
-}
+
 @media screen and (max-width:1250px) {
     .main{
      grid-template-columns: repeat(1,1fr);
